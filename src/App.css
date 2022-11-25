@@ -1,10 +1,19 @@
 .App {
-  text-align: center;
+  height: 100vh;
+}
+.content-holder {
+  border: 2px solid red;
+  margin: 50px 50px;
+  box-sizing: border-box;
+  height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.radio-col-left{
+  margin-left: 30px;
+}
+
+.logo {
+ flex:1
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,15 +22,38 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-header {
+  background-color: white;
+  height: 30%;
+}
+.image-holder{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0 15%;
+  margin-top: 2%
+}
+.col, .radio-col{
+  flex: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.left {
+  box-shadow: .5px 0 0 #000;
+}
+input[type='radio'] {
+  box-sizing: border-box;
+  appearance: none;
+  background: white;
+  outline: 2px solid #333;
+  border: 3px solid white;
+  width: 16px;
+  height: 16px;
+}
+
+input[type='radio']:checked {
+  background: #333;
+}
+.checklist-section {
+  display: flex;
+  height: 60%;
 }
 
 .App-link {
